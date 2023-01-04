@@ -11,7 +11,6 @@ const app = express()
 app.set('view engine', 'ejs')
 
 // Mount Middleware (app.use)
-  
 
 
 // Mount routes
@@ -20,13 +19,11 @@ app.get('/home', function(req, res) {
   res.render('home')
 })
 
-app.get('/pokemonTrainers', function(req, res) {
-  res.render('pokemonTrainers/index', {
-    pokemonTrainers: pokemonTrainers
+app.get('/pokemon-trainers', function(req, res) {
+  res.render('pokemon-trainers/index', {
+    pokemonTrainers
   })
 })
-
-
 
 // Tell the app to listen on port 3000
 

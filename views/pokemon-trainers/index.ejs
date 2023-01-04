@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokemon Trainers</title>
 </head>
 <body>
   <h1>Pokemon Trainers</h1>
@@ -12,7 +11,8 @@
     <% pokemonTrainers.forEach(trainer => { %>
       <li>
 				<%= trainer.firstName %> 
-				- 
+        <%= trainer.lastName %> 
+        -
 				<%= trainer.status ? 'active' : 'retired' %>
 			</li>
     <% }) %>
