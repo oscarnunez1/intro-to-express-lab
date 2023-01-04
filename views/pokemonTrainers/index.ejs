@@ -8,6 +8,14 @@
 </head>
 <body>
   <h1>Pokemon Trainers</h1>
-
+  <ul>
+    <% pokemonTrainers.forEach(trainer => { %>
+      <li>
+				<%= trainer.firstName %> 
+				- 
+				<%= trainer.status ? 'active' : 'retired' %>
+			</li>
+    <% }) %>
+  </ul>
 </body>
 </html>
