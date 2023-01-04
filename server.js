@@ -1,7 +1,7 @@
 // import modules
 
 import express from 'express'
-import { pokemonTrainers } from './data/pokemon-trainers'
+import { pokemonTrainers } from './data/pokemon-trainers.js'
 
 // Create Express app
 
@@ -11,12 +11,12 @@ const app = express()
 app.set('view engine', 'ejs')
 
 // Mount Middleware (app.use)
-
+  
 
 
 // Mount routes
 
-nodemonapp.get('/home', function(req, res) {
+app.get('/home', function(req, res) {
   res.render('home')
 })
 
